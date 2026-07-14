@@ -166,8 +166,3 @@ Output is JSON, parsed by the node and returned as a string.
 
 This node package: Apache 2.0  
 MOSS-Audio models and source: Apache 2.0
-# Comfy-Mossaudio
-# Comfy-Mossaudio
-# Comfy-Mossaudio
-# Comfy-Mossaudio
-# Comfy-Mossaudio
