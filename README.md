@@ -13,7 +13,7 @@ Inference runs in a **standalone venv** with transformers 4.57.1, avoiding confl
 
 ## Quick Install (automatic)
 
-The install scripts handle everything — cloning MOSS-Audio source, creating a standalone Python 3.11 venv, and installing dependencies. The venv goes into `ComfyUI/models/moss-audio/venv/`.
+The install scripts *SHOULD* handle everything — cloning MOSS-Audio source, creating a standalone Python 3.11 venv, and installing dependencies. The venv goes into `ComfyUI/models/moss-audio/venv/`.
 
 **Requires Python 3.11 specifically.** If it's not on your system, the installer will offer to download [uv](https://docs.astral.sh/uv/) — a single-binary Python version manager. uv will download and manage Python 3.11 for you automatically, no manual installation needed.
 
