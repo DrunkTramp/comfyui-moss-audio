@@ -1,0 +1,197 @@
+{
+  "id": "bf9a9e8e-7784-4c41-a3ac-f8705832db64",
+  "revision": 0,
+  "last_node_id": 5,
+  "last_link_id": 4,
+  "nodes": [
+    {
+      "id": 2,
+      "type": "MossAudioCaption",
+      "pos": [
+        6.612332605664258,
+        -357.6253942850015
+      ],
+      "size": [
+        400,
+        252
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "moss_pipe",
+          "type": "MOSS_AUDIO_PIPE",
+          "link": 1
+        },
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "link": 3
+        }
+      ],
+      "outputs": [
+        {
+          "name": "caption",
+          "type": "STRING",
+          "links": [
+            4
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "MossAudioCaption"
+      },
+      "widgets_values": [
+        "Describe the instrumentation, guitar tone, vocal style, drum patterns, and production texture in this audio. Note any sudden shifts in dynamics, rhythm, or intensity. Note any abrupt stops, tempo lurches, or dramatic breaks. Do not name any artists, bands, or song titles. Do not analyse song structure or chord progressions. Focus only on what you can hear.",
+        1024,
+        1,
+        250
+      ]
+    },
+    {
+      "id": 5,
+      "type": "PreviewAny",
+      "pos": [
+        523.1474511352751,
+        -387.61240612409705
+      ],
+      "size": [
+        346.65367703113384,
+        366.73953936297585
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "source",
+          "type": "*",
+          "link": 4
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PreviewAny"
+      },
+      "widgets_values": [
+        null,
+        null,
+        false
+      ]
+    },
+    {
+      "id": 4,
+      "type": "LoadAudio",
+      "pos": [
+        -468.9487041761555,
+        -243.9772800529608
+      ],
+      "size": [
+        389.611691791137,
+        177.46732268530957
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "AUDIO",
+          "type": "AUDIO",
+          "links": [
+            3
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadAudio"
+      },
+      "widgets_values": [
+        "System Of A Down - (6) - Chop Suey!.mp3",
+        null,
+        null
+      ]
+    },
+    {
+      "id": 1,
+      "type": "MossAudioModelLoader",
+      "pos": [
+        -361.19862067310174,
+        -418.19658168037745
+      ],
+      "size": [
+        280.8333343505859,
+        58
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "moss_pipe",
+          "type": "MOSS_AUDIO_PIPE",
+          "links": [
+            1
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "MossAudioModelLoader"
+      },
+      "widgets_values": [
+        "MOSS-Audio-4B-Instruct"
+      ]
+    }
+  ],
+  "links": [
+    [
+      1,
+      1,
+      0,
+      2,
+      0,
+      "MOSS_AUDIO_PIPE"
+    ],
+    [
+      3,
+      4,
+      0,
+      2,
+      1,
+      "AUDIO"
+    ],
+    [
+      4,
+      2,
+      0,
+      5,
+      0,
+      "STRING"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 1.0610764609500019,
+      "offset": [
+        810.0146947234161,
+        635.107072412688
+      ]
+    },
+    "frontendVersion": "1.45.20",
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0,
+    "VHS_MetadataImage": true,
+    "VHS_KeepIntermediate": true
+  },
+  "version": 0.4
+}
