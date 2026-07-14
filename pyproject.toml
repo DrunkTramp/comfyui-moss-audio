@@ -1,0 +1,16 @@
+[project]
+name = "comfyui-moss-audio"
+version = "0.2.0"
+description = "ComfyUI custom nodes for MOSS-Audio: local audio captioning, style description, and audio understanding. Runs in a standalone venv to avoid transformers version conflicts."
+license = { text = "Apache-2.0" }
+requires-python = ">=3.10"
+dependencies = [
+    "soundfile>=0.12",
+]
+
+[project.urls]
+Repository = "https://github.com/irreverend/comfyui-moss-audio"
+
+[tool.comfy]
+display_name = "MOSS-Audio Captioning"
+description = "Local audio style captioning and understanding via MOSS-Audio models. Describe music, speech, sound effects, and environmental audio. Inference runs in its own venv to stay compatible."
