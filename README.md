@@ -202,9 +202,9 @@ LoadAudio (from audiotools) ──→ MossAudioCaption ──→ ShowText
 3. Queue
 
 ### Performance
-
-- First run: ~30s (model loads into GPU)
-- Subsequent runs: ~2-10s depending on audio length
+    Only tested on an RTX 5060 ti 16gb GPU
+- First run: ~20s extra plus about as long as the length of the audio. 
+- Subsequent runs: about the length of the audio
 - Peak VRAM: ~8-10 GiB (with default 8 GiB GPU budget)
 - VRAM budget adjustable via `max_memory` in `caption_cli.py`
 
